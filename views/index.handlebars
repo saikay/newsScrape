@@ -1,0 +1,13 @@
+{{#each article}}
+    <article>
+        <a href="/addNoteForm/{{_id}}">Add Note</a><!-- open a note prompt-->
+        <div class="note" id="{{_id}}">
+
+        </div>
+        <a href="/deleteArticle/{{_id}}">Delete Article</a>
+        <span>{{title}}</span>
+        <a href="{{link}}">link</a>
+        </article>
+    
+{{/each}}
+
