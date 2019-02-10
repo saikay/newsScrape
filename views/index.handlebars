@@ -1,13 +1,14 @@
-{{#each article}}
-    <article>
-        <a href="/addNoteForm/{{_id}}">Add Note</a><!-- open a note prompt-->
-        <div class="note" id="{{_id}}">
+<div class="contain">
+    {{#each article}}
+        <article class="card" style="width: 30rem;">
+            <div class="note" id="{{_id}}">
+                <a href="/addNoteForm/{{_id}}" class="card-link" >Add Note</a><!-- open a note prompt-->
+                <a href="/deleteArticle/{{_id}}" class="card-link">Delete Article</a>
+                <p>{{title}}</p>
+                <a href="{{link}}" class="card-link">link</a>
+            </div>
 
-        </div>
-        <a href="/deleteArticle/{{_id}}">Delete Article</a>
-        <span>{{title}}</span>
-        <a href="{{link}}">link</a>
         </article>
-    
-{{/each}}
-
+        
+    {{/each}}
+</div>

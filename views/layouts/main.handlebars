@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>New Scaper</title>
 </head>
 <body>
-    <h1>Mongo News Scraper</h1>
-    <a href="/scrape" id="callScrape" >scrape news</a>
-    <a href="/">Home</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <span class="navbar-brand">Mongo News Scraper</span>
+        <a href="/scrape" class="nav-link" id="callScrape" >scrape news</a>
+        <a href="/" class="nav-link">Home</a>
+    </nav>
     {{{body}}}
     <script src="/js/home.js"></script>
 </body>
